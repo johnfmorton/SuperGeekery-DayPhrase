@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Supergeekery-dayphrase by johnfmorton</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Supergeekery-dayphrase</h1>
+        <p>Show a string based on the current day of the week.</p>
+
+        <p class="view"><a href="https://github.com/johnfmorton/SuperGeekery-DayPhrase">View the Project on GitHub <small>johnfmorton/SuperGeekery-DayPhrase</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/johnfmorton/SuperGeekery-DayPhrase/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/johnfmorton/SuperGeekery-DayPhrase/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/johnfmorton/SuperGeekery-DayPhrase">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>SuperGeekery DayPhrase</h1>
+
+<h2>Overview</h2>
+
+<p>SuperGeekery DayPhrase is a ExpressionEngine plug-in.</p>
+
+<p>It is a single ExpressionEngine tag that takes the name of a day of the week, lower-case, as a parameter and a string. For example, here's a version of the tag showing all 8 possible parameters, including 'default'. </p>
+
+<pre><code>{exp:sg_dayphrase
+    sunday="I'm feeling sunny."
+    monday= "I'm going cyan."
+    tuesday="I'm ready to go."
+    wednesday="I'm talking turquoise."
+    thursday="I'm feeling spooky."
+    friday="I'm feeling funky."
+    saturday="I'm going green."
+    default = "I'm just showing a default message."
+}
+</code></pre>
+
+<p>The 'default' value would never be seen in the case above because all 7 days of the week are defined. The 'default' value is only useful if you don't define some of the days of the week. See this example:</p>
+
+<pre><code>{exp:sg_dayphrase
+    friday="I love Fridays!"
+    saturday=""
+    sunday="The weekend is almost over. Bummer."
+    default = "I'm holding out for Friday."
+}
+</code></pre>
+
+<p>In this case, Monday - Thursday the tag would output "I'm holding out for Friday." On Saturday, it would output nothing because the 'saturday' parameter is defined but set to nothing. That means it won't inherit the default value because it is defined as an empty string. On Sunday the tag will output the message, "The weekend is almost over. Bummer."</p>
+
+<h2>Installation</h2>
+
+<p>To install this plug-in, place the "sg_dayphrase" folder in your system/expressionengine/third_party folder on your server.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/johnfmorton">johnfmorton</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
