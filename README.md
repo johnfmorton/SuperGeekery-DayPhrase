@@ -2,7 +2,7 @@
 
 ## Overview
 
-SuperGeekery DayPhrase is a ExpressionEngine plug-in.
+SuperGeekery DayPhrase is a ExpressionEngine plug-in that returns a phrase based on the day of the week.
 
 It is a single ExpressionEngine tag that takes the name of a day of the week, lower-case, as a parameter and a string. For example, here's a version of the tag showing all 8 possible parameters, including 'default'. 
 
